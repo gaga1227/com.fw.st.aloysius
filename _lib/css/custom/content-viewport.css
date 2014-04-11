@@ -29,7 +29,7 @@
 .contentViewport table:first-child, .contentViewport table.first-child { margin-top:0; }
 
 /* body */
-body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; font-size:15px; font-weight:400; line-height:24px; }
+body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size:18px; font-weight:400; line-height:26px; }
 
 
 /* ==========================================================================
@@ -44,30 +44,16 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 .contentViewport h5, .h5 { color:#00aab8; font-size:16px; line-height:24px; font-weight:700; font-style:normal; margin:0!important; padding: 8px 0px  0px 0px; }  
 .contentViewport p,  .p  { color:#333; font-size:15px; line-height:24px; font-weight:400; font-style:normal; margin:0!important; padding: 0px 0px  1em 0px; }
 
-/* fonts */ 
-.contentViewport h1, .h1,
-.contentViewport h2, .h2,
-.contentViewport h2, .h3 { font-family:'Merriweather',serif; }
-
-.contentViewport h1, .h1,
-.contentViewport h2, .h2 { color:#1f353f; }
-
 
 /* ==========================================================================
    elem - LINK
    ========================================================================== */
    
 /* default */
-.contentViewport a 			{ color:#00aab8; text-decoration:none; }
+.contentViewport a 			{ color:#57a2db; text-decoration:none; }
 .contentViewport a:hover,
 .contentViewport a:focus,
-.contentViewport a:active 	{ color:#00aab8; text-decoration:underline; }
-
-/* dark */
-.contentViewport a.dark 		{ color:#333; text-decoration:none; }
-.contentViewport a.dark:hover,
-.contentViewport a.dark:focus,
-.contentViewport a.dark:active 	{ color:#333; text-decoration:underline; }
+.contentViewport a:active 	{ color:#57a2db; text-decoration:underline; }
 
 
 /* ==========================================================================
@@ -173,7 +159,7 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 	.contentViewport .blockquote p,
 	.contentViewport .blockquote li,
 	.contentViewport .blockquote span { 
-		color:#262626; font-family:'Merriweather',serif; font-size:20px; font-weight:400; line-height:38px; font-style:normal; }
+		color:#262626; font-size:20px; font-weight:400; line-height:38px; font-style:normal; }
 
 	/* cite */
 	.contentViewport blockquote + cite,
@@ -211,13 +197,13 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 
 /* quote */
 .contentViewport .quote	{ 
-	color:#222; font-family:'Merriweather',serif; font-size:18px; font-weight:400; font-style:normal; }
+	color:#222; font-size:18px; font-weight:400; font-style:normal; }
 .contentViewport p.quote { 
 	max-width:550px; padding:8px 0 16px 0; }
 
 /* reference */ 
 .contentViewport .reference { 
-	color:#333; font-family:'Merriweather',serif; font-size:16px; font-weight:400; font-style:normal; }
+	color:#333; font-size:16px; font-weight:400; font-style:normal; }
 
 /* tag */ 
 .contentViewport .tag { 
@@ -415,11 +401,6 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 	.btnText .iconInline:before	{ font-size:14px; line-height:24px; }	
 
 /* -------------------------------------------------------------------------- */
-/* extend slim */
-.btnText.slim,
-.btnText.slim .label { font-weight:400; }
-
-/* -------------------------------------------------------------------------- */
 /* btnBox */
 .btnBox { 
 	display:inline-block; position:relative; width:auto; height:auto; margin:0 16px 16px 0; padding:0 40px; overflow:hidden;
@@ -435,7 +416,7 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 	.btnBox,
 	.btnBox .label { 
 		color:#fff!important; text-align:center; vertical-align:middle;
-		font-family:'Montserrat',sans-serif; font-weight:400; font-size:16px; line-height:50px; }	
+		font-weight:400; font-size:16px; line-height:50px; }	
 	.btnBox:hover .label,
 	.btnBox:focus .label,
 	.btnBox:active .label { 
@@ -450,19 +431,6 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 	.btnBox .icon:before,
 	.btnBox .iconInline:before 	{ font-size:16px; line-height:50px; }	
 
-/* -------------------------------------------------------------------------- */
-/* btnBox.compact */
-.btnBox.compact 		{ padding:0 20px; }
-.btnBox.compact,
-.btnBox.compact .label 	{ font-size:14px; line-height:35px; }
-
-/* -------------------------------------------------------------------------- */
-/* btnBox.highlight */
-.btnBox.highlight 		 { background:#06bbca; }
-.btnBox.highlight:hover,
-.btnBox.highlight:focus,
-.btnBox.highlight:active { background:#1f353f; }
-
 
 /* ==========================================================================
    style - MISC
@@ -471,6 +439,7 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 /* -------------------------------------------------------------------------- */
 /* override */
 .contentViewport .iconInline.left { padding-right:5px }
+.contentViewport .iconInline.right { padding-left:5px }
 
 /* -------------------------------------------------------------------------- */
 /* helpers */
@@ -480,239 +449,3 @@ body.ps, .contentViewport { color:#333; font-family:'Montserrat',sans-serif; fon
 /* widgets */
 .contentViewport .interaction,
 .contentViewport .flashcontent { display:block; position:relative; margin:0 auto 16px auto; padding:0; overflow:hidden; }
-
-
-/* ==========================================================================
-   responsive - ALL
-   ========================================================================== */
-@media only screen and (max-width:500px) {
-
-	/* smaller headings */
-	.contentViewport h1, .h1 { font-size:32px; line-height:40px; padding:8px 0 16px 0; } 
-	.contentViewport h2, .h2 { font-size:24px; line-height:32px; } 
-	.contentViewport h3, .h3 { font-size:18px; line-height:24px; } 
-	
-	/* smaller blockquote */
-	.contentViewport blockquote,
-	.contentViewport .blockquote { padding:20px 25px 12px 25px; background-image:none; }
-	
-	.contentViewport blockquote,
-	.contentViewport blockquote p,
-	.contentViewport blockquote li,
-	.contentViewport blockquote span,
-	.contentViewport .blockquote,
-	.contentViewport .blockquote p,
-	.contentViewport .blockquote li,
-	.contentViewport .blockquote span { font-size:18px; line-height:32px; }
-
-}
-
-
-/* ==========================================================================
-   special - GRAPHICAL QUOTE
-   ========================================================================== */
-
-/* -------------------------------------------------------------------------- */
-/* common */
-.contentViewport .graphicalQuote {
-	position:relative; width:auto; height:auto; margin:8px 0; padding:0;
-	background-position:left top; background-repeat:no-repeat; }
-	
-	/* bgImg */
-	.contentViewport .graphicalQuote .bgImg { 
-		display:block; position:relative; width:100%; height:auto; margin:0; padding:0; }
-	
-	/* quote */
-	.contentViewport .graphicalQuote blockquote { 
-		position:absolute; top:50%; }
-
-/* -------------------------------------------------------------------------- */
-/* custom | mission -> Religious Education */
-.contentViewport #graphicalQuoteRE blockquote { 
-	max-width:52%; margin-top:-6em; }
-
-/* -------------------------------------------------------------------------- */
-/* responsive */	
-@media only screen and (max-width:600px) {
-	/* common */
-	.contentViewport .graphicalQuote { overflow:hidden; }
-	.contentViewport .graphicalQuote .bgImg { position:absolute; top:0; left:0; }
-	.contentViewport .graphicalQuote blockquote { position:relative; top:auto; }
-		
-	/* custom | mission -> Religious Education */
-	.contentViewport #graphicalQuoteRE { padding-top:50%; }
-	.contentViewport #graphicalQuoteRE blockquote { width:auto; max-width:none; margin:0; }
-}
-
-/* ==========================================================================
-   special - ITEM ICON
-   ========================================================================== */
-
-/* -------------------------------------------------------------------------- */
-/* container */
-.itemIconListing { 
-	margin:16px 0 32px 0; }
-
-	/* -------------------------------------------------------------------------- */
-	/* item */
-	.contentViewport .itemIcon { 
-		margin-bottom:2em; text-align:center; }
-	
-		/* imgThumb */
-		.contentViewport .itemIcon .imgThumb,
-		.contentViewport .itemIcon > img { 
-			display:block; width:100%; height:auto; max-width:190px; margin:0 auto;
-			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
-			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
-		.itemIcon.col3a .imgThumb,
-		.itemIcon.col3b .imgThumb,
-		.itemIcon.col3c .imgThumb,
-		.itemIcon.col3a > img,
-		.itemIcon.col3b > img,
-		.itemIcon.col3c > img { max-width:155px; } 
-		
-		/* title */
-		.contentViewport .itemIcon .title { padding:1.5em 0 0.5em 0; }
-		
-/* -------------------------------------------------------------------------- */
-/* responsive */
-@media only screen and (max-width:500px) {
-	/* back to original size */
-	.itemIcon.col3a .imgThumb,
-	.itemIcon.col3b .imgThumb,
-	.itemIcon.col3c .imgThumb,
-	.itemIcon.col3a > img,
-	.itemIcon.col3b > img,
-	.itemIcon.col3c > img { max-width:190px; } 
-}
-
-/* ==========================================================================
-   special - NAPLAN
-   ========================================================================== */
-
-/* -------------------------------------------------------------------------- */
-/* container */
-#naplan { 
-	position:relative; width:100%; height:auto; margin:16px 0 32px 0; padding:0;
-	font-family:'Montserrat',sans-serif; }
-		
-	/* -------------------------------------------------------------------------- */
-	/* tabs */
-	#naplan .tabs { 
-		position:relative; width:auto; height:52px; margin:0; padding:0; overflow:hidden; }
-		
-		/* btnTab */
-		#naplan .btnTab { 
-			display:block; position:absolute; bottom:0; width:25%; height:100%; margin:0; padding:0; overflow:hidden;
-			color:#333;
-			text-decoration:none!important; outline:0 none!important; cursor:pointer;
-			/*transition*/
-			/*-webkit-transform:translate3d(0,0,0);*/
-			-webkit-transition:none;
-			-moz-transition:none;
-			-o-transition:none;
-			transition:none; }
-		
-		/* btnTab custom */
-		#naplan #btnTab1 { left:0; }
-		#naplan #btnTab2 { left:25%; }
-		#naplan #btnTab3 { left:50%; }
-		#naplan #btnTab4 { left:75%; }
-			
-			/* label */
-			#naplan .btnTab .label { 
-				display:block; height:48px; margin:0 2px;
-				background:#e5e5e5; border-top:4px solid #f2f2f2;
-				font-size:16px; font-weight:700; line-height:48px;
-				text-transform:uppercase; text-align:center; }
-				
-			/* label custom */
-			#naplan #btnTab1 .label { margin-left:0; }
-			#naplan #btnTab4 .label { margin-right:0; }
-			
-			/* label interaction */
-			.no-touch #naplan .btnTab:hover .label,
-			.no-touch #naplan .btnTab:focus .label,
-			.touch #naplan .btnTab:active .label { 
-				background:#fff; }
-		
-		/* btnTab selected */
-		#naplan .btnTab.selected,
-		.no-touch #naplan .btnTab.selected:hover,
-		.no-touch #naplan .btnTab.selected:focus,
-		.touch #naplan .btnTab.selected:active {
-			pointer-events:none; cursor:default; }
-		
-			/* label selected */
-			#naplan .btnTab.selected .label,
-			.no-touch #naplan .btnTab.selected:hover .label,
-			.no-touch #naplan .btnTab.selected:focus .label,
-			.touch #naplan .btnTab.selected:active .label { 
-				background:#fff; border-top-color:#17a7b7; }
-
-	/* -------------------------------------------------------------------------- */
-	/* areas */
-	#naplan .areas { 
-		position:relative; width:auto; height:108px; margin:0; padding:0; overflow:hidden;
-		background:#fff; }
-		
-		/* area */
-		#naplan .area { 
-			display:block; position:absolute; top:0; width:20%; height:100%; margin:0; padding:0; overflow:hidden;
-			font-size:12px; font-weight:700; line-height:1em; text-align:center; text-transform:uppercase; }
-		
-		/* area custom */
-		#naplan #area1 { left:0; }
-		#naplan #area2 { left:20%; }
-		#naplan #area3 { left:40%; }
-		#naplan #area4 { left:60%; }
-		#naplan #area5 { left:80%; }
-		
-			/* img */
-			#naplan .area img { display:block; width:37px; height:37px; margin:22px auto 12px auto; }
-	 		#naplan #area4 img { margin-bottom:8px; } 
-			
-			/* label */
-			#naplan .area .label { display:block; width:auto; font-size:; }
-	
-	/* responsive */
-	@media only screen and (max-width:600px) {
-		#naplan .area { font-size:10px; font-weight:400; }
-	}
-	
-	/* -------------------------------------------------------------------------- */
-	/* graphs */
-	#naplan .graphs { 
-		position:relative; width:auto; height:0; margin:0; padding:78%/*510/650*/ 0 0 0; overflow:hidden;
-		font-size:0; line-height:0; }
-		
-		/* graph */
-		#naplan .graph { 
-			display:block; position:absolute; top:0; left:0; width:100%; height:auto; }
-	
-	/* -------------------------------------------------------------------------- */
-	/* legends */ 
-	#naplan .legends { 
-		position:relative; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
-		background:#fff; text-align:center; }
-		
-		/* legend */
-		#naplan .legend { 
-			display:inline-block; width:auto; height:auto; margin:0; padding:20px 12px; }
-			
-			/* bgc */
-			#naplan .legend .bgc { 
-				display:inline-block; width:11px; height:11px; vertical-align:middle;
-				font-size:0; line-height:0;
-				/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
-				/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
-			
-			/* label */
-			#naplan .legend .label { 
-				display:inline-block; margin-left:6px; vertical-align:middle;
-				color:#333; font-size:13px; line-height:1em; font-weight:700; text-transform:uppercase; } 	
-	 
-	/* -------------------------------------------------------------------------- */
-	/* shift */
-	#naplan .shift { margin-left:9%; }
-	

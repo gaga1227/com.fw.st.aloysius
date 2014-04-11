@@ -18,7 +18,7 @@
 		.audioContainer .audioHeader .audioTitle { 
 			position:relative; width:auto; height:20px; margin:0; padding:15px; overflow:hidden;
 			color:#fff; background:none; white-space:nowrap; text-overflow:ellipsis;
-			font-family:'Montserrat',sans-serif; font-size:15px; font-weight:400; line-height:20px; }
+			font-size:15px; font-weight:400; line-height:20px; }
 		 
 		 	/* audioTrackID */
 			.audioContainer .audioHeader .audioTrackID { 

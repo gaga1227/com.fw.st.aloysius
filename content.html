@@ -12,7 +12,7 @@
 <!-- IE optimized -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <!-- Mobile viewport optimized -->
-<meta name="viewport" content="width=960,initial-scale=1.0,maximum-scale=1.0" />
+<meta name="viewport" content="width=960,maximum-scale=1.0" />
 <!-- Base URL -->
 <base href="" />
 <!-- Title -->
@@ -47,7 +47,6 @@
 <script type="text/javascript" src="_lib/js/jquery.cycle.js"></script><!-- Cycle -->
 <script type="text/javascript" src="_lib/js/video-js/video.js"></script><!-- videoJS -->
 <script type="text/javascript" src="_lib/js/mejs/mediaelement-and-player.js"></script><!-- mejs -->
-<script type="text/javascript" src="_lib/js/placeholders.js"></script><!-- placeholders -->
 <!-- JS:FW -->
 <script type="text/javascript" src="_lib/js/fw.utils.js"></script><!-- utils -->
 <script type="text/javascript" src="_lib/js/fw.widgets.js"></script><!-- widgets -->
@@ -71,39 +70,38 @@
 	<div id="header">
 		<div class="padder">
 			<!-- BRAND -->
-			<a class="brand" href="index.html"><img class="crest" src="_lib/img/img-crest.png" width="" height="" alt="St Aloysius College" /></a>
+			<a class="brand" href="index.html"><img class="crest" src="_lib/img/img-crest.png" width="160" height="110" alt="St Aloysius College" /></a>
 			<!-- NAV -->
-			<div id="nav" class="nfp">
-				<div class="padder">
-					<div id="navItems" class="clearfix">
-						<a id="nav1" class="navItem" href="#"><span class="label">Our College</span></a>
-						<a id="nav2" class="navItem" href="#"><span class="label">Enrolments</span></a>
-						<a id="nav3" class="navItem selected" href="#"><span class="label">Learning &amp; Teaching</span></a>
-						<a id="nav4" class="navItem" href="#"><span class="label">News &amp; Events</span></a>
-						<a id="nav5" class="navItem" href="#"><span class="label">Our Community</span></a>
-						<a id="nav6" class="navItem" href="#"><span class="label">Location &amp; Contact</span></a>
-					</div>
-				</div>
-			</div>
+			<div id="nav" class="navItems nfp"><!--
+				--><a id="nav1" class="navItem" href="#">Our College</a><!--
+				--><a id="nav2" class="navItem" href="#">Enrolments</a><!--
+				--><a id="nav3" class="navItem selected" href="#">Learning &amp; Teaching</a><!--
+				--><a id="nav4" class="navItem" href="#">News &amp; Events</a><!--
+				--><a id="nav5" class="navItem" href="#">Our Community</a><!--
+				--><a id="nav6" class="navItem" href="#">Location &amp; Contact</a><!--
+			--></div>
 		</div>
 	</div><!-- /HEADER -->	
 	<!-- BANNER -->
 	<div id="banner">
-		<img class="bgImg" src="_lib/img/img-banner-3.jpg" width="" height="" alt=""/>
+		<img class="bgImg" src="_lib/img/banner-3.jpg" width="1280" height="250" alt=""/>
 		<div class="padder">
 			<!-- HEADLINE -->
 			<h1 class="headline">Learning &amp; Teaching</h1>
 		</div>
 	</div><!-- /BANNER -->
 	<!-- CONTENT -->
-	<div id="content">
+	<div id="content" class="">
 		<div class="padder clearfix">
 			<!-- MAIN -->
 			<div id="main" class="clearfix">
 				<!-- COLFULL -->
 				<div class="colFull">
+					<h1 class="h1">Outdoor Education Program</h1>
 					<div class="contentViewport">
-						
+						<p class="leaderText">Etiam at risus et justo dignissim congue onec congue lacinia dui, a porttitor lectus unc eu ullamcorper.</p>
+						<p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis alivquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu.</p>
+						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
 					</div>
 				</div><!-- /COLFULL -->
 			</div><!-- /MAIN -->
@@ -111,20 +109,19 @@
 			<div id="aside">
 				<!-- SIDENAV -->
 				<ul id="sideNav">
-					<li><a href="content.html"><span class="label">Non dolor</span></a></li>
-					<li class="selected"><a class="selected" href="content.html"><span class="label">Lorem ipsum dolor sit</span></a></li>
-					<li><a href="content.html"><span class="label">Morbi in aliquam tincidunt mauris eu risus sem quis</span></a></li>
-					<li>
-						<a href="content.html"><span class="label">Mangna lectus</span></a>
+					<li><a href="content.html"><span class="label">Curriculum Overview</span></a></li>
+					<li class="selected">
+						<a href="content.html"><span class="label">Co-Curricular Activities</span></a>
 						<ul>
-							<li><a href="content.html"><i class="icon icon-angle-right"></i><span class="label">Turpis egestas</span></a></li>
-							<li class="selected"><a href="content.html"><i class="icon icon-angle-right"></i><span class="label">Aliquam tincidunt mauris eu risus</span></a></li>
-							<li><a href="content.html"><i class="icon icon-angle-right"></i><span class="label">Vulputate magna</span></a></li>
+							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Sports</span></a></li>
+							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Production</span></a></li>
+							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Debating</span></a></li>
+							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Social Justice</span></a></li>
+							<li class="selected"><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Outdoor Education Program</span></a></li>
+							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Italy Trip</span></a></li>
+							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Music Camp</span></a></li>
 						</ul>	
 					</li>
-					<li><a href="content.html"><span class="label">Gravida eu est</span></a></li>
-					<li><a href="content.html"><span class="label">Vehicula congue nulla</span></a></li>
-					<li><a href="content.html"><span class="label">Suspendisse tellus</span></a></li>
 					<li><a href="content-forms.html"><span class="label">Forms</span></a></li>
 					<li><a href="content-kitchensink.html"><span class="label">Kitchen Sink</span></a></li>
 					<li><a href="content-news-list.html"><span class="label">News listing</span></a></li>
@@ -139,7 +136,7 @@
 		<div class="padder">
 			<div id="footerContacts">
 				<p><b><i>St Aloysius College</i></b> PO Box 2072 Hotham Hill, North Melbourne, VC 3051 Australia</p>
-				<p>Telephone (03) 9329 0411 | <a href="mailto:principal@aloysius.vic.edu.au">principal@aloysius.vic.edu.au</a></p>
+				<p>Telephone (03) 9329 0411&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:principal@aloysius.vic.edu.au">principal@aloysius.vic.edu.au</a></p>
 			</div>
 			<ul id="footerLinks" class="clearfix">
 				<li>&copy; St Aloysius College 2014</li>

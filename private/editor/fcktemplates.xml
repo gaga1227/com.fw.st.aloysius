@@ -8,21 +8,21 @@
 <Templates imagesBasePath="templates/images/" templateName="default">
 		
 	<!-- DIVIDERS -->
-	<Template title="Stump divider" image="tmpl-divider-stump.gif">
-		<Description>Inserts a stump divider</Description>
+	<Template title="Dotted divider" image="tmpl-divider-dotted.gif">
+		<Description>Inserts a dotted divider</Description>
 		<Html>
 			<![CDATA[
-			<div class="divider dividerStump">&nbsp;</div>
+			<div class="divider dividerDotted">&nbsp;</div>
 			<p>&nbsp;</p>
 			]]>
 		</Html>
 	</Template>
 	
-	<Template title="Solid divider" image="tmpl-divider-solid.gif">
-		<Description>Inserts a solid divider</Description>
+	<Template title="Dotted blue divider" image="tmpl-divider-dotted.gif">
+		<Description>Inserts a blue dotted divider</Description>
 		<Html>
 			<![CDATA[
-			<div class="divider dividerSolid">&nbsp;</div>
+			<div class="divider dividerDotted blu">&nbsp;</div>
 			<p>&nbsp;</p>
 			]]>
 		</Html>
@@ -87,12 +87,16 @@
 			<![CDATA[			
 			<blockquote>
 				<p>[Insert your quote message]</p>
+				<cite>[Insert citation]</cite>
 			</blockquote>
-			<cite>[Insert citation]</cite>
 			<p>&nbsp;</p>
 			]]>
 		</Html>
 	</Template>	
+
+
+
+
 
 	<!-- SPECIALBOX -->
 	<Template title="Special Box (Highlight)" image="tmpl-box-highlight.gif">
@@ -191,6 +195,12 @@
 			]]>
 		</Html>
 	</Template>
+	
+	
+	
+	
+	
+	
 	
 	<!-- TABLE -->
 	<Template title="Table (two-column)" image="tmpl-table-styled.gif">

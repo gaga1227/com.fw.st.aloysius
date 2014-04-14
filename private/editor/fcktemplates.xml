@@ -94,10 +94,6 @@
 		</Html>
 	</Template>	
 
-
-
-
-
 	<!-- SPECIALBOX -->
 	<Template title="Special Box (Highlight)" image="tmpl-box-highlight.gif">
 		<Description>Inserts a highlighted box</Description>
@@ -195,12 +191,6 @@
 			]]>
 		</Html>
 	</Template>
-	
-	
-	
-	
-	
-	
 	
 	<!-- TABLE -->
 	<Template title="Table (two-column)" image="tmpl-table-styled.gif">

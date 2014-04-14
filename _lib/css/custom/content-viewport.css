@@ -157,7 +157,7 @@ body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size
 /* container */
 .contentViewport blockquote,
 .contentViewport .blockquote { 
-	display:block; position:relative; width:auto; height:auto; margin:18px 0 27px 0; padding:40px 24px 24px 80px;
+	display:block; position:relative; width:auto; max-width:446px; height:auto; margin:18px 0 27px 0; padding:40px 24px 24px 80px;
 	color:#333; background:#f7f7f7 url(../../img/bg-quote.png) 34px 36px no-repeat;
 	/*border-radius*/-webkit-border-radius:6px; border-radius:6px;
 	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
@@ -271,11 +271,6 @@ body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size
 	border-top:1px solid #57a1da; height:19px; margin:9px 0 0 0; }
 
 
-
-
-
-
-
 /* ==========================================================================
    cog - SPECIALBOX
    ========================================================================== */
@@ -283,14 +278,24 @@ body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size
 /* -------------------------------------------------------------------------- */
 /* specialBox */
 .contentViewport .specialBox {
-	display:block; position:relative; width:auto; max-width:500px; height:auto; margin:8px 0 16px 0; padding:20px 25px 12px 25px; overflow:hidden;
-	color:#333; background:#fff; }	
+	display:block; position:relative; width:auto; max-width:500px; height:auto; margin:18px 0 27px 0; padding:20px 25px 12px 25px; overflow:hidden;
+	color:#333; background:#f7f7f7;
+	/*border-radius*/-webkit-border-radius:4px; border-radius:4px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+		
+/* specialBox inside grey */
+.grey .contentViewport .specialBox { 
+	background:#fff; }
 	
 	/*title*/
-	.contentViewport .specialBox .title { color:#99bc33; }
+	.contentViewport .specialBox .title { color:#57a1da; }
 		
 	/* a */
-	.contentViewport .specialBox a { color:#99bc33!important; }
+	.contentViewport .specialBox a { color:#57a1da!important; }
+	
+	/* ul */
+	.contentViewport .specialBox ul,
+	.contentViewport .specialBox ol { padding:0 0 9px 0; }
 	
 	/* header */
 	.contentViewport .specialBox > .header { display:none; }
@@ -304,7 +309,7 @@ body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size
 	/* header */
 	.contentViewport .specialBox.withHeader > .header { 
 		display:block; position:relative; width:auto; height:auto; margin:-20px -25px 20px -25px; padding:6px 25px; overflow:hidden;
-		color:#fff; background:#9bb731; border-top:1px solid #edf2d8; }
+		color:#fff; background:#57a1da; }
 	
 		/* icon */
 		.contentViewport .specialBox > .header > .icon {
@@ -316,19 +321,15 @@ body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size
 			
 /* specialBox.withIcon */
 .contentViewport .specialBox.withIcon { 
-	max-width:450px; min-height:24px; padding:15px 40px 0px 60px; }
+	max-width:450px; min-height:26px; padding:15px 40px 6px 60px; }
 	
 	/* icon */
 	.contentViewport .specialBox.withIcon > .icon { 
-		position:absolute; top:0; left:0; width:46px; height:54px; margin:0; padding:0; overflow:hidden;
-		color:#fff; background:#9bb731; font-size:0; line-height:0; }
+		position:absolute; top:0; left:0; width:46px; height:56px; margin:0; padding:0; overflow:hidden;
+		color:#fff; background:#57a1da; font-size:0; line-height:0; }
 	.ie7 .contentViewport .specialBox.withIcon > .icon,
 	.contentViewport .specialBox.withIcon > .icon:before { 
-		font-size:21px; line-height:54px; }
-
-
-
-
+		font-size:21px; line-height:56px; }
 
 
 /* ==========================================================================
@@ -360,7 +361,7 @@ body.ps, .contentViewport { color:#222; font-family:'Asap',sans-serif; font-size
 	/* th */
 	.contentViewport .styledTable th,
 	.contentViewport .styledTable th p { 
-		background:#297ad4; color:#fff; font-size:18px; font-weight:700; line-height:26px; }
+		background:#57a1da; color:#fff; font-size:18px; font-weight:700; line-height:26px; }
 	.contentViewport .styledTable th p { 
 		padding-bottom:0; }
 	

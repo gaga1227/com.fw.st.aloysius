@@ -10,7 +10,7 @@
 	
 	/* -------------------------------------------------------------------------- */
 	/*header*/
-	.ui-datepicker .ui-datepicker-header { position:relative; background:#9e0e3a; }
+	.ui-datepicker .ui-datepicker-header { position:relative; background:#297ad4; }
 		
 		/*override select*/
 		.ui-datepicker .ui-datepicker-title select { display:none!important; }
@@ -67,7 +67,7 @@
 		.ui-datepicker td.last-child { padding-right:15px; }
 			.ui-datepicker td span,
 			.ui-datepicker td a { color:#fff; display:block; padding:0 10px; text-align:center; text-decoration:none; }
-			.ui-datepicker td a:hover { color:#fff; background:#9f9f9f; }
+			.ui-datepicker td a:hover { color:#fff; background:#57a1da; }
 			
 		
 		/*disabled*/
@@ -76,7 +76,7 @@
 		
 		/*current*/
 		.ui-datepicker td .ui-state-highlight,
-		.ui-datepicker td .ui-state-highlight:hover { color:#fff; background:#9e0e3a; }
+		.ui-datepicker td .ui-state-highlight:hover { color:#fff; background:#297ad4; }
 	
 	/* -------------------------------------------------------------------------- */
 	/*override buttonpane*/

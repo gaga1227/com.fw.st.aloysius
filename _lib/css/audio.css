@@ -5,14 +5,16 @@
 
 /* audio container */
 .audioContainer { 
-	display:block; position:relative; width:100%; height:auto; margin:0 auto!important; padding:8px 0 16px 0; overflow:hidden; }		
+	display:block; position:relative; width:100%; height:auto; margin:18px auto 27px auto!important; padding:0; overflow:hidden;
+	/*border-radius*/-webkit-border-radius:3px; border-radius:3px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }		
 .audioContainer div:first-child { 
 	padding-top:0; }
 	
 	/* audioHeader */
 	.audioContainer .audioHeader { 
 		position:relative; width:auto; height:50px; margin:0; padding:0; overflow:hidden;
-		color:#fff; background-color:#16aeb9; /*default*/ }
+		color:#fff; background-color:#57a1da; /*default*/ }
 		
 		/* audioTitle */
 		.audioContainer .audioHeader .audioTitle { 

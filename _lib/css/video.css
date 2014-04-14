@@ -4,7 +4,10 @@
 /* ------------------------------------------------------------------------------ */
 
 /* video container */
-.videoContainer { display:block; position:relative; width:100%; height:auto; margin:8px auto 16px auto!important; padding:0; overflow:hidden; }		
+.videoContainer { 
+	display:block; position:relative; width:100%; height:auto; margin:18px auto 27px auto!important; padding:0; overflow:hidden;
+	/*border-radius*/-webkit-border-radius:3px; border-radius:3px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }		
 .videoContainer div:first-child { margin-top:0!important; }
 
 	/* video player container */

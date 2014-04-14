@@ -1,12 +1,12 @@
 /* ------------------------------------------------------------------------------ */
 /* FW Player Default Skin */
-/* Author: JX 20130130 */
+/* Author: JX 20140414 */
 
 /*container*/
 .mejs-container.mejs-fw {
 	width:auto!important; height:40px!important;/*40-0(border)*/ margin:0; padding:0;
 	color:#444; /*border:1px solid #fbfbfb; border-bottom-color:#b3b3b3;*/
-	background-color:#fff; background-image:none; }
+	background-color:#f7f7f7; background-image:none; }
 
 	/*layers*/
 	.mejs-fw .mejs-layers { 
@@ -30,7 +30,7 @@
 		/*play/pause button*/
 		.mejs-fw .mejs-controls .mejs-playpause-button  {
 			position:absolute; top:0; left:0; width:44px;
-			border-right:1px solid #bdbdbd;
+			border-right:1px solid #ebeae8;
 			/*border-radius*/-webkit-border-radius:0; border-radius:0;
 			/*box-shadow-webkit-box-shadow:1px 0px 0px 1px #fbfbfb; box-shadow:1px 0px 0px 0px #fbfbfb;*/ }
 			
@@ -54,7 +54,7 @@
 		/*volumn button*/
 		.mejs-fw .mejs-controls .mejs-volume-button  {
 			position:absolute; top:0; right:0; width:44px;
-			border-left:1px solid #bdbdbd;
+			border-left:1px solid #ebeae8;
 			/*border-radius*/-webkit-border-radius:0; border-radius:0;
 			/*box-shadow-webkit-box-shadow:-1px 0px 0px 1px #fbfbfb; box-shadow:-1px 0px 0px 0px #fbfbfb;*/ }
 		.mejs-fw.mejs-ios .mejs-controls .mejs-volume-button,
@@ -132,7 +132,7 @@
 			/*current*/
 			.mejs-fw .mejs-controls .mejs-time-rail .mejs-time-current { 
 				/*background-gradient*/
-				background-color:#18afb9; /*default*/
+				background-color:#297ad4; /*default*/
 				background-image:none; }
 			
 			/*handle*/

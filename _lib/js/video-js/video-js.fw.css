@@ -128,7 +128,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 /*themes*/
 .vjs-fw-skin .vjs-control:hover div,
 .vjs-fw-skin .vjs-control:focus div,
-.vjs-fw-skin .vjs-control:active div { background-color: #06bbca; }/*default*/
+.vjs-fw-skin .vjs-control:active div { background-color: #57a1da; }/*default*/
 
 .vjs-fw-skin .vjs-control:focus {
   outline: 0;
@@ -204,7 +204,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 
 /*themes*/
 .vjs-fw-skin .vjs-play-progress { /*default*/
-	background-color: #06bbca!important; 
+	background-color: #297ad4!important; 
 	background-image:url(video-js.fw.png)!important; 
 	background-position:0 -220px!important; 
 	background-repeat:repeat-x!important; }
@@ -292,7 +292,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 ---------------------------------------------------------*/
 .vjs-fw-skin .vjs-big-play-button {
   display: block; /* Start hidden */ z-index: 2;
-  position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin: -50px 0 0 -50px; text-align: center; vertical-align: center; cursor: pointer !important;
+  position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin: -50px 0 0 -50px; text-align: center; vertical-align: middle; cursor: pointer !important;
   opacity: 0.95;
   background:url('video-js.fw.png') 0 -120px no-repeat;
 }
@@ -305,7 +305,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 /*themes*/
 .vjs-fw-skin div.vjs-big-play-button:hover span,
 .vjs-fw-skin div.vjs-big-play-button:focus span,
-.vjs-fw-skin div.vjs-big-play-button:active span { background-color:#06bbca; }/*default*/
+.vjs-fw-skin div.vjs-big-play-button:active span { background-color:#57a1da; }/*default*/
 
 /* Loading Spinner
 ---------------------------------------------------------*/

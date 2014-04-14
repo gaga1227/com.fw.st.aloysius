@@ -6,8 +6,11 @@
 /* ------------------------------------------------------------------------------ */
 /* container and common */
 .slideshow,
-.slideshow .slide { display:block; position:relative; width:100%!important; height:auto!important; overflow:hidden; background:#fff; }
-.slideshow { margin:8px auto 16px auto!important; padding:56%/*360/640*/ 0 56px 0!important; }
+.slideshow .slide { display:block; position:relative; width:100%!important; height:auto!important; overflow:hidden; background:#f1f0ef; }
+.slideshow { 
+	margin:18px auto 27px auto!important; padding:56.25%/*360/640*/ 0 50px 0!important;
+	/*border-radius*/-webkit-border-radius:3px; border-radius:3px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
 .slideshow:first-child { margin-top:0!important; }
 	
 	/* ------------------------------------------------------------------------------ */
@@ -24,7 +27,7 @@
 
 /* ------------------------------------------------------------------------------ */
 /* slideshowControls */
-.slideshow .controls { position:absolute; bottom:10px; right:10px; width:73px; height:36px; margin:0; padding:0; overflow:hidden; z-index:20; }
+.slideshow .controls { position:absolute; bottom:7px; right:10px; width:73px; height:36px; margin:0; padding:0; overflow:hidden; z-index:20; }
 	
 	/* ------------------------------------------------------------------------------ */
 	/* prev | next */
@@ -75,17 +78,17 @@
 /* ------------------------------------------------------------------------------ */
 /* caption */
 .slideshow .captionContainer { 
-	position:absolute; bottom:0; left:0; width:100%; height:56px; margin:0; padding:0; overflow:hidden; }
+	position:absolute; bottom:0; left:0; width:100%; height:50px; margin:0; padding:0; overflow:hidden; }
 	
 	.slideshow .caption { 
-		width:auto; height:24px; margin:16px 100px 16px 25px!important; padding:0; overflow:hidden;
+		width:auto; height:26px; margin:12px 100px 12px 25px!important; padding:0; overflow:hidden;
 		white-space:nowrap; text-overflow:ellipsis;
-		color:#333; font-size:15px; font-weight:400; line-height:24px; }
+		color:#333; font-size:18px; font-weight:400; line-height:26px; }
 
 /* responsive */
 @media only screen and (max-width:640px) {
 	
 	/* smaller text */
-	.slideshow .caption { font-size:12px; }
+	.slideshow .caption { font-size:13px; }
 
 }

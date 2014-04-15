@@ -212,6 +212,9 @@ html, body { height:100% }
 		
 	/* oldie fix */
 	.oldie #nav .navItem { letter-spacing:-1px; }	
+	
+	/* ie7 overflow-x fix */
+	.ie7 #nav .navItem { float:left; }
 		
 	/* navItem - interaction */	
 	.no-touch #nav .navItem:hover,
@@ -688,13 +691,70 @@ html, body { height:100% }
 
 
 /* ==========================================================================
+   common - LISTING
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* container */
+.listing { 
+	display:block; position:relative; width:auto; height:auto; margin:0; padding:0; }
+
+/* extend news */
+.listing.news { display:table; width:100%; }
+
+
+/* ==========================================================================
    common - ITEMS TILE (NEWS)
    ========================================================================== */
 
+/* -------------------------------------------------------------------------- */
+/* container */
+.itemTile { 
+	display:inline-block; width:auto; height:auto; margin:18px; padding:0; overflow:hidden;
+	background:#fff; vertical-align:top;
+	/*box-shadow*/-webkit-box-shadow:0px 0px 6px 0px rgba(0,0,0,0.15); box-shadow:0px 0px 6px 0px rgba(0,0,0,0.15);
+	/*border-radius*/-webkit-border-radius:3px; border-radius:3px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box;
+	/*transition*/
+	/*-webkit-transform:translate3d(0,0,0);*/
+	-webkit-transition:webkit-box-shadow 0.3s ease-in-out;
+	-moz-transition:box-shadow 0.3s ease-in-out;
+	transition:box-shadow 0.3s ease-in-out; }
+	
+	/* imgThumb */
+	.itemTile .imgThumb { 
+		display:block; width:100%; height:auto; min-height:165px; margin:0; padding:0; overflow:hidden;
+		background:#f7f7f7 url(../img/img-crest-grey.png) center center no-repeat; }
+		
+		/* img */
+		.itemTile .imgThumb img { display:block; width:100%; height:auto; }
+		
+	/* padder */
+	.itemTile > .padder { display:block; padding:20px 20px 11px 20px; overflow:hidden; }
+	.itemTile > .padder > span { display:block; margin-bottom:9px; }
+	
+		/* date */
+		.itemTile .padder .date {  }
+		
+		/* title */
+		.itemTile .padder .title { margin-bottom:18px; min-height:72px;/*3 lines: 24x3*/ text-decoration:none; }
+ 
+/* -------------------------------------------------------------------------- */
+/* extend a */
+a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:pointer; }
 
-
-/* news item stuff ... */
-
+.no-touch a.itemTile:hover,
+.no-touch a.itemTile:focus,
+.touch a.itemTile:active { 
+	/*box-shadow*/-webkit-box-shadow:0px 0px 8px 0px rgba(0,0,0,0.4); box-shadow:0px 0px 8px 0px rgba(0,0,0,0.4); }
+	
+	.no-touch a.itemTile:hover .title,
+	.no-touch a.itemTile:focus .title,
+	.touch a.itemTile:active .title { text-decoration:underline; }
+ 
+/* -------------------------------------------------------------------------- */
+/* extend news */
+.itemTile.news { width:250px; margin:9px 36px 27px 0; }
 
 
 /* ==========================================================================

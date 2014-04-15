@@ -16,7 +16,7 @@
 <!-- Base URL -->
 <base href="" />
 <!-- Title -->
-<title>St Aloysius College - </title>
+<title>St Aloysius College - Home</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
@@ -35,11 +35,6 @@
 <link type="text/css" rel="stylesheet" media="print"  href="_lib/css/print.css" /><!-- print -->
 <!-- CSS:LIBS -->
 <link type="text/css" rel="stylesheet" media="screen" href="_lib/css/slideshow.css" /><!-- slideshow -->
-<link type="text/css" rel="stylesheet" media="screen" href="_lib/css/video.css" /><!-- video -->
-<link type="text/css" rel="stylesheet" media="screen" href="_lib/js/video-js/video-js.fw.css" /><!-- videoJS Skin -->
-<link type="text/css" rel="stylesheet" media="screen" href="_lib/css/audio.css" /><!-- audio -->
-<link type="text/css" rel="stylesheet" media="screen" href="_lib/js/mejs/mediaelementplayer.css" /><!-- mejs -->
-<link type="text/css" rel="stylesheet" media="screen" href="_lib/js/mejs/mejs-fw-skin.css" /><!-- mejs skin -->
 <!-- CSS:CUSTOM -->
 <style type="text/css">
 	/*insert code here*/	
@@ -50,12 +45,8 @@
 <!-- JS:LIBS -->
 <script type="text/javascript" src="_lib/js/jquery.mobile.touch.js"></script><!-- touch gestures -->
 <script type="text/javascript" src="_lib/js/jquery.cycle.js"></script><!-- Cycle -->
-<script type="text/javascript" src="_lib/js/video-js/video.js"></script><!-- videoJS -->
-<script type="text/javascript" src="_lib/js/mejs/mediaelement-and-player.js"></script><!-- mejs -->
 <!-- JS:FW -->
 <script type="text/javascript" src="_lib/js/fw.utils.js"></script><!-- utils -->
-<script type="text/javascript" src="_lib/js/fw.widgets.js"></script><!-- widgets -->
-<script type="text/javascript" src="_lib/js/fw.media.js"></script><!-- media -->
 <script type="text/javascript" src="_lib/js/common.js"></script><!-- main -->
 <!-- JS:CUSTOM -->
 <script type="text/javascript">
@@ -64,7 +55,7 @@
 </head>
 
 <!-- BODY -->
-<body class="ps">
+<body id="home" class="ps">
 <!-- DEBUG -->
 <div id="debugInfo" class="nfp debug" data-on="" data-width=""></div>
 <!-- LOADER -->
@@ -80,7 +71,7 @@
 			<div id="nav" class="navItems nfp"><!--
 				--><a id="nav1" class="navItem" href="content.html">Our College</a><!--
 				--><a id="nav2" class="navItem" href="content.html">Enrolments</a><!--
-				--><a id="nav3" class="navItem selected" href="content.html">Learning &amp; Teaching</a><!--
+				--><a id="nav3" class="navItem" href="content.html">Learning &amp; Teaching</a><!--
 				--><a id="nav4" class="navItem" href="content-news-list.html">News &amp; Events</a><!--
 				--><a id="nav5" class="navItem" href="content.html">Our Community</a><!--
 				--><a id="nav6" class="navItem" href="content.html">Location &amp; Contact</a><!--
@@ -89,81 +80,58 @@
 	</div><!-- /HEADER -->	
 	<!-- BANNER -->
 	<div id="banner">
-		<img class="bgImg" src="_lib/img/banner-3.jpg" width="1280" height="250" alt=""/>
+		<img class="bgImg" src="_lib/img/banner-home-1.jpg" width="1280" height="490" alt=""/>
 		<div class="padder">
-			<!-- HEADLINE -->
-			<h1 class="headline">Learning &amp; Teaching</h1>
+			<div class="content acenter">
+				<h1>Bloom where<br />you're planted.</h1>
+				<p class="subline">Sed auctor neque eu tellus<br />rhoncus ut eleifend nibh por.</p>
+				<a href="#" class="btnBox"><span class="label">Read More</span></a>
+			</div>
 		</div>
 	</div><!-- /BANNER -->
+	<!-- WELCOME -->
+	<div id="welcome" class="section">
+		<div class="padder">
+			<h2 class="h2 acenter">Welcome to St Aloysius College</h2>
+			<div class="utils btns"><!--
+				--><a class="btnAction" href="#"><span class="label">Attend a Tour</span></a><!--
+				--><a class="btnAction" href="#"><span class="label">Request<br />a Prospectus</span></a><!--
+				--><a class="btnAction" href="#"><span class="label">Parent<br />Teacher Online</span></a><!--
+				--><a class="btnAction" href="#"><span class="label">Parent Portal</span></a><!--
+			--></div>
+		</div>
+	</div><!-- /WELCOME -->
 	<!-- CONTENT -->
-	<div id="content" class="">
+	<div id="content" class="grey">
 		<div class="padder clearfix">
-			<!-- MAIN -->
-			<div id="main" class="clearfix">
-				<!-- COLFULL -->
-				<div class="colFull">
-					<h1 class="h1 deco">Outdoor Education Program</h1>
-					<div class="contentViewport">
-						<p class="leaderText">Etiam at risus et justo dignissim congue onec congue lacinia dui, a porttitor lectus unc eu ullamcorper.</p>
-						<p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis alivquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu.</p>
-						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
-						<h3>Etiam at risus et justo dignissim</h3>
-						<p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus. ornare. ante, ac egestas est sit amet arcu.</p>
-						<h4>Class aptent taciti sociosqu</h4>
-						<p>Ad litora torquent per conubia nostra, per <a href="#">inceptos himenaeos</a>. Sed augue sit amet leo posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
-						<h3>Eugiat consectetur nisl orci bibendum</h3>
-						<ul>
-							<li>In condimentum facilisis porta</li>
-							<li>Nulla fringilla, orci  ac euismod semper</li>
-							<li>Magna diam porttitor mauris, quis sollicitudin sapien justo in libero</li>
-							<li>Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum
-								<ol>
-									<li>Condimentum</li>
-									<li>Porttitor mauris</li>
-									<li>Vestibulum</li>
-								</ol>
-							</li>
-						</ul>
-						<p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus. ornare. ante, ac egestas est sit amet arcu.</p>
-						<ol>
-							<li>In condimentum facilisis porta</li>
-							<li>Nulla fringilla, orci  ac euismod semper
-								<ul>
-									<li>Condimentum</li>
-									<li>Porttitor mauris</li>
-									<li>Vestibulum</li>
-								</ul>
-							</li>
-							<li>Magna diam porttitor mauris, quis sollicitudin sapien justo in libero</li>
-							<li>Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum</li>
-						</ol>
-					</div>
-				</div><!-- /COLFULL -->
-			</div><!-- /MAIN -->
-			<!-- ASIDE -->
-			<div id="aside">
-				<!-- SIDENAV -->
-				<ul id="sideNav">
-					<li><a href="content.html"><span class="label">Curriculum Overview</span></a></li>
-					<li class="selected">
-						<a href="content.html"><span class="label">Co-Curricular Activities</span></a>
-						<ul>
-							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Sports</span></a></li>
-							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Production</span></a></li>
-							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Debating</span></a></li>
-							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Social Justice</span></a></li>
-							<li class="selected"><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Outdoor Education Program</span></a></li>
-							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Italy Trip</span></a></li>
-							<li><a href="content.html"><i class="icon icon-chevron-right"></i><span class="label">Music Camp</span></a></li>
-						</ul>	
-					</li>
-					<li><a href="content-forms.html"><span class="label">Forms</span></a></li>
-					<li><a href="content-kitchensink.html"><span class="label">Kitchen Sink</span></a></li>
-					<li><a href="content-news-list.html"><span class="label">News listing</span></a></li>
-					<li><a href="content-event-list.html"><span class="label">Events listing</span></a></li>
-					<li><a href="content-resource-list.html"><span class="label">Resources listing</span></a></li>
-				</ul><!-- /SIDENAV -->
-			</div><!-- /ASIDE -->
+			<h2 class="h2 big acenter">News from St Aloysius College</h2>
+			<!-- LISTING -->
+			<div class="listing news acenter">
+				<!-- ITEM -->
+				<a class="itemTile news" href="#">
+					<span class="imgThumb"><img src="___samples/ph-news.gif" width="250" height="165" alt="" /></span>
+					<span class="padder contentViewport">
+						<span class="date">26 APRIL, 2014</span>
+						<span class="title">Lorem ipsum dolor sit amet magna carta</span>
+					</span>
+				</a><!-- /ITEM -->
+				<!-- ITEM -->
+				<a class="itemTile news" href="#">
+					<span class="imgThumb"><img src="___samples/ph-news.gif" width="250" height="165" alt="" /></span>
+					<span class="padder contentViewport">
+						<span class="date">26 APRIL, 2014</span>
+						<span class="title">Aliquet egestas purus in blandit curabitur vulputate ligula</span>
+					</span>
+				</a><!-- /ITEM -->
+				<!-- ITEM -->
+				<a class="itemTile news" href="#">
+					<span class="imgThumb"><img src="___samples/ph-news.gif" width="250" height="165" alt="" /></span>
+					<span class="padder contentViewport">
+						<span class="date">26 APRIL, 2014</span>
+						<span class="title">Lorem ipsum dolor sit amet magna carta</span>
+					</span>
+				</a><!-- /ITEM -->
+			</div><!-- /LISTING -->
 		</div>
 	</div><!-- /CONTENT -->
 	<!-- FOOTER -->

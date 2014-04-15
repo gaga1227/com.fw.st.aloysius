@@ -691,6 +691,114 @@ html, body { height:100% }
 
 
 /* ==========================================================================
+   common - UTILS
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* container */
+.utils { 
+	display:block; position:relative; width:auto; height:auto; margin:0; padding:0; overflow:hidden; }
+
+/* extend utils.top*/
+.utils.top { margin-bottom:45px; }
+
+/* exctend utils.btm */
+.utils.btm { margin-top:27px; }
+
+/* extend utils.news */
+.utils.news { width:536px; /*250x2+36*/ }
+
+/* -------------------------------------------------------------------------- */
+/* utilsHeading */
+.utilsHeading { display:table; width:100%; }
+
+	/* common */
+	.utilsHeading > a,
+	.utilsHeading > span { display:inline-block; vertical-align:middle; }
+	
+	/* a */
+	.utilsHeading > a { 
+		color:#afafaf;
+		text-decoration:none!important; outline:0 none!important; cursor:pointer; }
+		
+	.no-touch .utilsHeading > a:hover,
+	.no-touch .utilsHeading > a:focus,
+	.touch .utilsHeading > a:active { 
+		color:#57a2db; }
+	
+	.utilsHeading > a.disabled { 
+		color:#ccc!important; pointer-events:none; cursor:default; }
+	
+	/* heading */
+	.utilsHeading > a + .heading,
+	.utilsHeading > span + .heading { margin-left:16px; }
+
+
+/* ==========================================================================
+   common - PAGINATION
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* container */
+.pagination { 
+	position:relative; width:auto; height:auto; margin:0; padding:18px 0 27px 0; overflow:hidden;
+	text-align:center; }
+	
+	/* msg */
+	.pagination .msg { display:none; }
+	
+	/* pages */
+	.pagination .pages { 
+		display:table; width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
+	
+		/* btnPrev|btnNext */
+		.pagination .pages > .btnPrev,
+		.pagination .pages > .btnNext { 
+			display:inline-block; width:36px; height:36px; margin:0; padding:0; overflow:hidden;
+			color:#666; vertical-align:middle; line-height:36px;
+			text-decoration:none!important; outline:0 none!important; cursor:pointer; }
+		
+		/* spacing */
+		.pagination .pages > .btnPrev { margin-right:12px; }
+		.pagination .pages > .btnNext { margin-left:12px; }
+		
+		/* interaction */	
+		.no-touch .pagination .pages > .btnPrev:hover,
+		.no-touch .pagination .pages > .btnPrev:focus,
+		.touch .pagination .pages > .btnPrev:active,
+		.no-touch .pagination .pages > .btnNext:hover,
+		.no-touch .pagination .pages > .btnNext:focus,
+		.touch .pagination .pages > .btnNext:active { 
+			color:#297ad4; }
+		
+		/* disabled */
+		.pagination .pages > .btnPrev.disabled,
+		.pagination .pages > .btnNext.disabled { 
+			color:#d2d4d6!important;
+			pointer-events:none; cursor:default; }
+		
+		/* btnPage */
+		.pagination .pages > .btnPage { 
+			display:inline-block; width:2em; height:2em; margin:0 2px; padding:0; overflow:hidden;
+			color:#666; background:#fff; vertical-align:middle;
+			font-size:18px; font-weight:700; line-height:2em;
+			text-decoration:none!important; outline:0 none!important;
+			/*border-radius*/-webkit-border-radius:3px; border-radius:3px;
+			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+		
+		/* interaction */	
+		.no-touch .pagination .pages > .btnPage:hover,
+		.no-touch .pagination .pages > .btnPage:focus,
+		.touch .pagination .pages > .btnPage:active { 
+			background:#ebeae8; }
+			
+		/* selected */	
+		.pagination .pages > .btnPage.selected { 
+			color:#fff; background:#297ad4!important;
+			pointer-events:none; }
+			
+
+/* ==========================================================================
    common - LISTING
    ========================================================================== */
 
@@ -699,8 +807,9 @@ html, body { height:100% }
 .listing { 
 	display:block; position:relative; width:auto; height:auto; margin:0; padding:0; }
 
-/* extend news */
+/* extend */
 .listing.news { display:table; width:100%; }
+.listing.resources { padding-top:12px; }
 
 
 /* ==========================================================================
@@ -753,8 +862,8 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 	.touch a.itemTile:active .title { text-decoration:underline; }
  
 /* -------------------------------------------------------------------------- */
-/* extend news */
-.itemTile.news { width:250px; margin:9px 36px 27px 0; }
+/* extend */
+.itemTile.news 			{ width:250px; margin:9px 36px 27px 0; }
 
 
 /* ==========================================================================
@@ -764,18 +873,18 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 /* -------------------------------------------------------------------------- */
 /* container */
 .itemList { 
-	position:relative; margin:0 0 12px 0; padding:0; overflow:hidden; }
+	position:relative; margin:0 0 16px 0; padding:0; overflow:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* header */
 	.itemList > .header { 
 		position:relative; width:auto; height:auto; min-height:22px; margin:0; padding:12px 20px 12px 66px; overflow:hidden;
-		color:#333; background:#fff; font-size:16px; font-weight:700; line-height:22px; }
+		color:#333; background:#fff; font-size:20px; font-weight:700; line-height:22px; font-style:italic; }
 		
 		/* icon */
 		.itemList > .header > .icon { 
 			position:absolute; top:0; left:0; width:46px; height:100%; margin:0; padding:0; overflow:hidden;
-			color:#fff; background:#06b2c0; font-size:24px; line-height:46px;
+			color:#fff; background:#5c9fda; font-size:24px; line-height:46px;
 			/*transition*/
 			/*-webkit-transform:translate3d(0,0,0);*/
 			-webkit-transition:none 0.3s ease-in-out;
@@ -797,22 +906,22 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 /* -------------------------------------------------------------------------- */
 /* extend - event */
 .itemList.event { 
-	position:relative; margin:0 0 16px 0; padding:0; overflow:hidden; }
+	position:relative; margin:0; padding:0; overflow:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* header */
 	.itemList.event > .header { 
 		height:36px; padding:0 20px 0 50px;
 		white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-		color:#fff; background:#c8c8c8; font-size:13px; line-height:36px; }
+		color:#fff; background:#c8c8c8; font-size:14px; line-height:36px; font-style:normal; }
 	.itemList.event.today > .header { 
-		background:#aecb44; }
+		background:#a1ca6c; }
 		
 		/* icon */
 		.itemList.event > .header > .icon { 
 			width:36px; font-size:18px; line-height:36px; font-style:normal; }
 		.itemList.event.today > .header > .icon { 
-			background:#9bb832; }
+			background:#8cb951; }
 			
 		/* a */
 		.itemList.event > .header a,
@@ -835,7 +944,7 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 			.itemList.event .evt .time { 
 				width:160px; height:auto; margin:0; padding:0; overflow:hidden; float:right; clear:right;
 				white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-				color:#8c8c8c; font-size:13px; font-weight:700; line-height:24px; text-align:right; }
+				color:#999; font-size:14px; font-weight:700; line-height:26px; text-align:right; }
 			.oldie .itemList.event .evt .time { 
 				letter-spacing:-1px; }
 			
@@ -845,8 +954,8 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 			
 			/* title */	
 			.itemList.event .evt .title { 
-				width:auto; height:auto; margin:0; padding:0 0 8px 0; overflow:hidden;
-				color:#333; font-size:18px; font-weight:700; line-height:24px; }
+				width:auto; height:auto; margin:0; padding:0 0 12px 0; overflow:hidden;
+				color:#444; font-size:20px; font-weight:700; line-height:26px; }
 				
 			/* a */
 			.itemList.event .evt a,
@@ -854,50 +963,7 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 			
 			.itemList.event .evt a:hover,
 			.itemList.event .evt a:focus,
-			.itemList.event .evt a:active  { color:#06b2c0; text-decoration:underline; }
-	
-	
-/* ==========================================================================
-   common - pagination
-   ========================================================================== */
-
-/* -------------------------------------------------------------------------- */
-/* container */
-.pagination { 
-	position:relative; width:auto; height:auto; margin:0; padding:15px 0; overflow:hidden;
-	text-align:center; }
-	
-	/* msg */
-	.pagination .msg { 
-		color:#888; font-size:14px; }
-	
-	/* pages */
-	.pagination .pages { 
-		width:auto; height:auto; margin:10px 0 0 0; padding:0; overflow:hidden; }
-	
-		/* btnPrev|btnNext */
-		.pagination .pages > .btnPrev,
-		.pagination .pages > .btnNext { display:none!important; }
-		
-		/* btnPage */
-		.pagination .pages > .btnPage { 
-			display:inline-block; width:2em; height:2em; margin:0 1px; padding:0; overflow:hidden;
-			color:#fff; background:#c3c6c9;
-			font-size:16px; font-weight:600; line-height:2em;
-			text-decoration:none!important; outline:0 none!important;
-			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
-			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
-		
-		/* interaction */	
-		.no-touch .pagination .pages > .btnPage:hover,
-		.no-touch .pagination .pages > .btnPage:focus,
-		.touch .pagination .pages > .btnPage:active { 
-			background:#02cee0; }
-			
-		/* selected */	
-		.pagination .pages > .btnPage.selected { 
-			background:#06bbca!important;
-			pointer-events:none; }
+			.itemList.event .evt a:active  { color:#5c9fda; text-decoration:underline; }
 
 
 /* ==========================================================================
@@ -951,7 +1017,6 @@ a.itemTile { text-decoration:none!important; outline:0 none!important; cursor:po
 /* ==========================================================================
    common - BUTTONS
    ========================================================================== */
-
 
 /* buttons stuff ... */
 
